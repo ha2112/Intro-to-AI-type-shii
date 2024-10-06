@@ -1,1 +1,2 @@
 # AI_type_shii
+After researching, I think that we should use CNN (Convolutional Neural Network) for this tasks. CNN is an advanced Deep Learning model that helps image processing become more efficient, reduces the amount of parameters.
