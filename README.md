@@ -1,2 +1,22 @@
 # AI_type_shii
-After researching, I think that we should use CNN (Convolutional Neural Network) for this tasks. CNN is an advanced Deep Learning model that helps image processing become more efficient, reduces the amount of parameters.
+
+I. STEPS BY STEPS 
+Step 1: Prepare data pipeline
+
+
+
+Step 2: Preprocessing data
+
+
+
+Step 3: Building the CNN model using following tensorflow and opencv?
+
+
+
+Step 4: Evaluating performance
+
+
+
+Step 5: Saving model
+
+II. Analysis of this project
