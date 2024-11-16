@@ -1,22 +1,14 @@
-# AI_type_shii
+# Intro to AI Project (Digit Recognition)
 
-I. STEPS BY STEPS 
-Step 1: Prepare data pipeline
+## I. STEPS BY STEPS 
 
+### Step 1: Prepare data pipeline
+We'll use MNIST dataset for this project. This dataset contains 60,000 training images and 10,000 testing images of handwritten digits.
 
+### Step 2: Preprossing datas
 
-Step 2: Preprocessing data
+### Step 3: Building the CNN model using tensorflow and opencv
 
+### Step 4: Evaluating performance
 
-
-Step 3: Building the CNN model using following tensorflow and opencv?
-
-
-
-Step 4: Evaluating performance
-
-
-
-Step 5: Saving model
-
-II. Analysis of this project
+### Step 5: Saving model
