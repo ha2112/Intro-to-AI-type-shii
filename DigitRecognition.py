@@ -65,14 +65,19 @@ def predict_digit(image_path, model=None):
     prediction = model.predict(img)
     return np.argmax(prediction[0])
 
-if __name__ == "__main__":
-    # Example usage
-    model = train_model()  # Train model first time
+#############################################################
+# if __name__ == "__main__":
+#     # Example usage
+#     model = train_model()  # Train model first time
     
-    # Test prediction on sample image
-    # Replace 'test_digit.png' with your image path
-    try:
-        digit = predict_digit('test_digit.png', model)
-        print(f"Predicted digit: {digit}")
-    except Exception as e:
-        print(f"Error predicting digit: {str(e)}")
+#     # Test prediction on sample image
+#     # Replace 'test_digit.png' with your image path
+#     try:
+#         digit = predict_digit('test_digit.png', model)
+#         print(f"Predicted digit: {digit}")
+#     except Exception as e:
+#         print(f"Error predicting digit: {str(e)}")
+
+##############################################################
+model = keras.models.load_model("my_model.h5")
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
