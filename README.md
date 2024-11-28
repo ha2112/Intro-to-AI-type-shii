@@ -39,6 +39,6 @@ The CNN features a three-layer convolutional architecture designed for feature e
 Training on MNIST, the model learns to distinguish handwritten digits with minimal error.
 
 ## Usage
-1. Train the model:
+1. Use the model:
    ```bash
    python DigitRecognition.py
