@@ -87,5 +87,5 @@ prediction = predict_digit("eight.png", model)
 
 a = 0
 for i in prediction:
-    print(f"Percent of image displaying {a}: {i}")
+    print(f"Percent of image displaying {a}: {i * 100}%")
     a += 1
