@@ -3,6 +3,7 @@ import cv2
 from PIL import Image
 import tensorflow as tf
 from tensorflow.keras import layers, models
+import os
 
 # Create a CNN model for digit recognition
 def create_model():
@@ -80,10 +81,13 @@ def predict_digit(image_path, model=None):
 
 ##############################################################
 
-model = tf.keras.models.load_model("my_model.h5")
+path = os.path.dirname(os.path.realpath(__file__))
+# path = os.path.dirname(os.path.realpath("testing.ipynb"))
+
+model = tf.keras.models.load_model(f"{path}/my_model.h5")
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-prediction = predict_digit("eight.png", model)
+prediction = predict_digit(f"{path}/eight.png", model)
 
 a = 0
 for i in prediction:
