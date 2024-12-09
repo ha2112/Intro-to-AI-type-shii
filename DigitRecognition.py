@@ -63,7 +63,7 @@ def predict_digit(image_path, model=None):
     # Preprocess image and predict
     img = preprocess_image(image_path)
     prediction = model.predict(img)
-    return np.argmax(prediction[0])
+    return prediction[0]
 
 #############################################################
 # if __name__ == "__main__":
@@ -79,5 +79,13 @@ def predict_digit(image_path, model=None):
 #         print(f"Error predicting digit: {str(e)}")
 
 ##############################################################
-model = keras.models.load_model("my_model.h5")
+
+model = tf.keras.models.load_model("my_model.h5")
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+prediction = predict_digit("eight.png", model)
+
+a = 0
+for i in prediction:
+    print(f"Percent of image displaying {a}: {i}")
+    a += 1
